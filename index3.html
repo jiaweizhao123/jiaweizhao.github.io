@@ -1,0 +1,196 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>网页作业</title>
+<link href="css/style3.css" rel="stylesheet">
+<link rel="icon" href="./image/图标.ico" type="image/x-icon">
+<script src="css/js1.js"></script>
+<style>
+	@keyframes loadingpage{
+		0%{height:50px;}
+		40%{height:105%;}
+		68%{height:20px;} 
+		72%{height:55px;}
+		75%{height:30px;}
+		85%{height:120px;}
+		95%{height:120px;}
+		100%{height:15px;}
+	}
+	@keyframes colorconceal{
+		0%{background-color:rgba(255,253,253,0.00);}
+		80%{background-color:rgba(255,253,253,0.00);}
+		90%{background-color:rgba(255,255,255,0.50);}
+		100%{background-color:rgba(255,253,253,1.00);}
+	}
+	@keyframes colorconceal2{
+		0%{color:rgba(0,0,0,0.00);}
+		60%{color:rgba(0,0,0,0.00);}
+		80%{color:rgba(0,0,0,0.63);}
+		100%{color:rgba(0,0,0,1.00);}
+	}
+	@keyframes colorconceal4{
+		0%{color:rgba(255,255,255,0.00);}
+		60%{color:rgba(255,255,255,0.00);}
+		80%{color:rgba(255,255,255,0.00);}
+		100%{color:rgba(255,255,255,1.00);}
+	}
+	@keyframes colorconceal3{
+		0%{border: 1px ridge rgba(0,0,0,0.00);background-color:rgba(255,255,255,0.00);}
+		50%{background-color:rgba(255,255,255,0.00);border: 1px ridge rgba(0,0,0,0.00);}
+		80%{background-color:rgba(255,255,255,0.00);border: 1px ridge rgba(0,0,0,0.00);}
+		100%{background-color:rgba(255,255,255,0.26);border: 1px ridge rgba(0,0,0,0.17);}
+	}
+	@-webkit-keyframes rightan
+				{
+				
+				from
+				{
+				    bottom: 0%;
+				    opacity: 0;
+				}
+				to
+				{
+				    bottom: 5%;
+				    opacity: 1; 
+				}
+				}
+				.rightan
+				{
+				animation: rightan 2s infinite;
+				animation-iteration-count: infinite;
+				}
+</style>
+<audio autoplay="autoplay" controls="controls" loop="loop" preload="auto"
+            	src="我们的夏之梦.mp3" hidden="true">
+</audio>
+</head>
+
+<body style="overflow-x: hidden">
+<div class="topmenu"><div class="title1"><h3 class="title2">导航页</h3></div>
+<div class="goto"><input class="putin" type="text"  style="border-style:none" οnkeydοwn="if(event.keyCode==13) {test()}"/></div>
+<div class="hello">
+<h1>Welcome to my web</h1>	
+</div>	
+</div>
+<input type="checkbox" id="check">
+<label for="check">
+  <i class="fas fa-bars" id="btn"></i>
+  <i class="fas fa-times" id="cancel"></i>
+</label>
+<div class="sidebar">
+<div class="header"></div>
+<div class="name">鲸落</div>
+<div class="message">
+<a class="list" id="list1" href="articles.html""><div>23</div>文章</a>
+<a class="list" id="list2" href="#"><div>10</div>标签</a>
+<a class="list" id="list3" href="#"><div>15</div>分类</a>
+</div>
+<div class="myselfmessage">
+<a class="index" href="index.html" id="gotoelse"><img src="image/首页.png"><span>······首页</span></a>
+<a class="index" href="tag.html" id="gotoelse"><img src="image/标签.png"><span>······标签</span></a>
+<a class="index" href="classficition.html" id="gotoelse"><img src="image/分类.png"><span>······分类</span></a>
+
+<a class="index" href="/作业（2）/index.html" id="gotoelse"><img src="image/链接.png"><span>······外链</span></a>
+</div>
+<div class="newword">
+	<img src="image/近期.png">
+	<span>近期文章</span>
+</div>
+<div class="passage">
+<a href="article1.html">数据结构-浅谈线性链表</a>
+<br>
+<a href="#">Java-MVC设计模式</a>
+<br>
+<a href="#">算法-对撞指针</a>
+</div>
+<div class="helplink">
+<a href="https://om.qq.com/userAuth/index"><img src="image/qq.png"></a>
+<a href="https://wx2.qq.com/cgi-bin/mmwebwx-bin/webwxindex?t=v2/index"><img src="image/微信.png"></a>
+<a href="https://mail.163.com/js6/main.jsp?sid=NCufIFReZLQcEXqemEeeEaBHnOMCqzKj&df=mail163_letter#module=welcome.WelcomeModule%7C%7B%7D"><img src="image/邮箱.png"></a>
+<a href="https://github.com/"><img src="image/github.png"></a>
+</div>
+</div>
+<div class="firstpage">
+<div class="pagebegin">
+<span class="web">TimeRush</span>
+<br>
+<span class="liyer">庐山烟雨浙江潮,未到千般恨不消。</span>
+</div>
+<br>
+<div class="rightan"><a id="getdown" href="#all"><img src="image/向下箭头.png"></a></div>
+</div>
+<div class="all" id="all">
+<div class="words">
+<a href="article1.html" class="line"><div class="titletip"><h4 class="webwords">数据结构——浅谈线性链表</h4></div></a>
+<div class="downline"></div>
+<img class="clock" src="image/时间小图标.png">
+<div class="time">发表于：2020-04-20 17:57</div>
+<img class="readcount" src="image/阅读.png">
+<div class="readin">阅读次数：123</div>
+<br>
+<p class="text">摘要：线性表的链式结构即链表，一个链表是由若干个在逻辑上连续的节点组成的，而节点由指针域和数据域两个部分组成，通过指针域指向下个节点来达成逻辑上的连续，这种特殊的结构大大的弥补了线性表的顺序结构所带来的种种缺陷，如大小固定、针对数据进行顺序操作麻烦等，但同时链表也存在一定的缺陷</p>
+<a href="article1.html" class="read">阅读全文  &raquo;</a>	
+</div>
+<div class="words">
+	<a href="article1.html" class="line"><div class="titletip"><h4 class="webwords">Java——MVC设计模式</h4></div></a>
+	<div class="downline"></div>
+	<img class="clock" src="image/时间小图标.png">
+	<div class="time">发表于：2020-04-21 19:47</div>
+	<img class="readcount" src="image/阅读.png">
+	<div class="readin">阅读次数：456</div>
+	<br>
+	<p class="text">摘要：在Java的使用上可以先通过对MVC(model、view、control)进行设计再将各部分有序的连接来实现整体功能的具体化，其中control代表获取用户交互信息的模板、model代表数据处理模板、view代表对最终结果进行具体表达的模板</p>
+	<a href="article1.html" class="read">阅读全文  &raquo;</a>	
+	</div>
+	<div class="words">
+		<a href="article1.html" class="line"><div class="titletip"><h4 class="webwords">数据结构——浅谈线性链表</h4></div></a>
+		<div class="downline"></div>
+		<img class="clock" src="image/时间小图标.png">
+		<div class="time">发表于：2020-04-20 17:57</div>
+		<img class="readcount" src="image/阅读.png">
+		<div class="readin">阅读次数：123</div>
+		<br>
+		<p class="text">摘要：线性表的链式结构即链表，一个链表是由若干个在逻辑上连续的节点组成的，而节点由指针域和数据域两个部分组成，通过指针域指向下个节点来达成逻辑上的连续，这种特殊的结构大大的弥补了线性表的顺序结构所带来的种种缺陷，如大小固定、针对数据进行顺序操作麻烦等，但同时链表也存在一定的缺陷</p>
+		<a href="article1.html" class="read">阅读全文  &raquo;</a>	
+		</div>
+		<div class="words">
+			<a href="article1.html" class="line"><div class="titletip"><h4 class="webwords">数据结构——浅谈线性链表</h4></div></a>
+			<div class="downline"></div>
+			<img class="clock" src="image/时间小图标.png">
+			<div class="time">发表于：2020-04-20 17:57</div>
+			<img class="readcount" src="image/阅读.png">
+			<div class="readin">阅读次数：123</div>
+			<br>
+			<p class="text">摘要：线性表的链式结构即链表，一个链表是由若干个在逻辑上连续的节点组成的，而节点由指针域和数据域两个部分组成，通过指针域指向下个节点来达成逻辑上的连续，这种特殊的结构大大的弥补了线性表的顺序结构所带来的种种缺陷，如大小固定、针对数据进行顺序操作麻烦等，但同时链表也存在一定的缺陷</p>
+			<a href="article1.html" class="read">阅读全文  &raquo;</a>	
+			</div>
+			<div class="words">
+				<a href="article1.html" class="line"><div class="titletip"><h4 class="webwords">数据结构——浅谈线性链表</h4></div></a>
+				<div class="downline"></div>
+				<img class="clock" src="image/时间小图标.png">
+				<div class="time">发表于：2020-04-20 17:57</div>
+				<img class="readcount" src="image/阅读.png">
+				<div class="readin">阅读次数：123</div>
+				<br>
+				<p class="text">摘要：线性表的链式结构即链表，一个链表是由若干个在逻辑上连续的节点组成的，而节点由指针域和数据域两个部分组成，通过指针域指向下个节点来达成逻辑上的连续，这种特殊的结构大大的弥补了线性表的顺序结构所带来的种种缺陷，如大小固定、针对数据进行顺序操作麻烦等，但同时链表也存在一定的缺陷</p>
+				<a href="article1.html" class="read">阅读全文  &raquo;</a>	
+				</div>
+				<div class="gotopage">
+					<a class="pagenum" href="index.html#all" id="firstone">1</a>
+					<a class="pagenum" href="index2.html#all" id="sceondone">2</a>
+					<a class="pagenum" href="index3.html#all"" id="third">3</a>
+					<a class="pagenum" href="index4.html#all"  id="fouth">4</a>
+					<a class="pagenum" href="index5.html#all" id="fifth">5</a>
+				</div>
+				<a href="index2.html#all" class="next"><div class="nextpage">上一页</div></a>
+				<a href="index4.html#all" class="next"><div class="nextpage">下一页</div></a>
+				</div>
+			<div class="bottomone">
+				<div class="endword">【一鲸落<img src="image/鲸鱼.png">万物生】</div>
+				<span class="fromit"><a href="https://jiaweizhao123.github.io/">©不识人间月</a> made by sazkuyo</span>
+			</div>
+<a class="post" href="#"><div class="top permalink"></div></a>
+
+</body>
+</html>

@@ -1,0 +1,421 @@
+body {
+	background:url(  "../image/背景13.png") no-repeat;
+	height: 100%;color: #51555c;
+	background-position: center center;          
+	/* 背景图不平铺 */
+	background-repeat: no-repeat;	 
+	/* 当内容高度大于图片高度时，背景图像的位置相对于viewport固定 */
+	background-attachment: fixed;
+	/* 让背景图基于容器大小伸缩 */
+	background-size: cover;
+	/* 设置背景颜色，背景图加载过程中会显示背景色 */
+	background-color: #464646;
+}
+@keyframes enter{
+	from{opacity: 0;}
+	to{opacity: 1;}
+}
+body{
+	animation: enter 0.8s;
+}
+.top {
+    display: inline-block;
+	width: 43.5px;
+	height: 43.5px;
+	background: url("../image/右下角向上标.png") no-repeat;
+    position: fixed; /* 相对于浏览器窗口进行绝对固定定位元素 */
+    right: 25px; /* 离右边距离：20像素 */
+	bottom: 25px; /* 离下边距离：20像素 */
+	transition: all 1.5s;
+}
+.top a {
+	display: inline-block;
+	line-height: 50px;
+	margin-right: 18px;
+    -webkit-transform: rotate(90deg); /* Webkit内核浏览器，如：Safari和Chrome */
+    -moz-transform: rotate(90deg); /* Firefox浏览器 */
+    -ms-transform: rotate(90deg); /* IE 9 */
+    -o-transform: rotate(90deg); /* Opera浏览器 */
+    transform: rotate(90deg); /* 其中90是旋转的角度 */
+	color:#000000;
+	animation:colorconceal2 5s;
+	animation-iteration-count: 1;
+}
+.top:hover {
+	transform: rotate(180deg);
+}
+
+#check{
+	display: none;
+  }
+  label #btn,label #cancel{
+	position: absolute;
+	cursor: pointer; /*改变鼠标样式*/
+	color: white;
+	border-radius: 5px;
+	margin: 15px 35px;
+	font-size: 29px;
+	background: url("../image/个人信息侧边栏.png") no-repeat;
+	height: 81px;
+	width: 50px;
+	text-align: center;
+	line-height: 45px;
+	transition: all .5s ease;
+  }
+  label:hover{
+	animation: shake 3s;
+	animation-iteration-count: infinite;
+  }
+  label #cancel{
+	opacity: 0;
+	visibility: hidden;
+  }
+  #check:checked ~ .sidebar{
+	left: 0;
+  }
+  #check:checked ~ label #btn{
+	margin-left: 283px;
+	opacity: 0;
+	visibility: hidden;
+  }
+  #check:checked ~ label #cancel{
+	margin-left: 283px;
+	opacity: 1;
+	visibility: visible;
+  }
+  label{
+	  position: fixed;
+	  top:30px;
+	  left:-30px;
+  }
+  .sidebar{
+	  background:url("../image/侧边栏4.jpg") no-repeat;
+	  background-size: cover;
+	  width:245px;
+      height: 100%;
+      float: left;
+	  background-position: center center;          
+	  /* 背景图不平铺 */
+	  background-repeat: no-repeat;	 
+	  background-size: cover;
+	  position: fixed;
+	  left: -245px;
+	  transition: all 0.5s;
+	  overflow: hidden;
+	  margin-top:-10px;
+	  border-radius:0px 15px 15px 0px;
+  }
+  @media(max-width:1400px){
+	  .pagebegin{
+		  display: none;
+	  }
+	  .rightan{
+		  display: none;
+	  }
+  }
+  .header{
+	  border:3px solid #18b8dc7d;
+	  width:70px;
+	  height:70px;
+	  overflow: hidden;
+	  border-radius: 40px;
+	  background:url("../image/头像1.png") no-repeat;
+	  background-size: cover;
+	  transition: all 1.3s;
+	  box-shadow: 0px 1px 5px #c371e9d9;
+	  margin:20px auto;
+	  cursor: pointer; /*改变鼠标样式*/
+  }
+
+  .myselfmessage{
+	width:245px;
+	zoom:1;
+	overflow: auto;
+	font-family: "仿宋";
+	margin-top:30px;
+	border-top: 1px solid #474646a3;
+	border-bottom: 1px solid #474646a3;
+}
+#gotoelse:hover{
+	color:#fbfbfbee;
+}
+.sidebar img{
+	float: left;
+}
+.leftone{
+	margin-left: 63.9px;
+}
+.myselfmessage a{
+	display: block;
+	width:245px;
+	height:60px;
+	color:#616161;
+	text-decoration: none;
+	margin:0px 0px;
+	transition: all 0.3s;
+	font-family: "仿宋";
+	font-size: 1.3em;
+	
+}
+.myselfmessage a span{
+	line-height: 60px;
+	
+}
+.myselfmessage a:hover{
+	background-color: #0086e6f5;
+}
+.index img{
+	float: left;
+	margin-right: 10px;
+	margin-top:4px;
+}
+.message1{
+	width:154px;
+	height:50px;
+	margin:30px auto;
+}
+.list{
+	width:50px;
+	height:50px;
+	float:left;
+	line-height: 26px;
+	text-align: center;
+	font-weight: 400;
+	color:#4c4c4c;
+	text-decoration: none;
+}
+.list div{
+	font-weight: 900;
+}
+#list1{
+	border-right:2px solid #48484885;
+}
+#list3{
+	border-left: 2px solid #48484885;
+}
+.newword{
+	width:100px;
+	margin: 15px auto;
+	margin-bottom: 0px;
+}
+.newword img{
+	float: left;
+	margin-top: 1px;
+}
+.newword span{
+	margin-left: 8px;
+	color:#000000;
+	font-weight: 800;
+}
+.passage{
+	width:245px;
+	margin:15px auto;
+	text-align: center;
+}
+.passage a{
+	margin:5px auto;
+	text-align: center;
+	text-decoration: none;
+	color:#022e7a;
+	border-bottom: 1px solid #00000000;
+}
+.passage a:hover{
+	color:#68048c;
+	border-bottom: 1px solid #000000;
+}
+.helplink{
+	width:160px;
+	margin:0px auto;
+	margin-top:110px;
+}
+
+.helplink a{
+	margin:0px 5px;
+	float: left;
+}
+
+@media(max-width:1400px){
+    .pagebegin{
+        display: none;
+    }
+    .rightan{
+        display: none;
+    }
+}
+.header{
+    border:3px solid #18b8dc7d;
+    width:70px;
+    height:70px;
+    overflow: hidden;
+    border-radius: 40px;
+    background:url("../image/头像1.png") no-repeat;
+    background-size: cover;
+    transition: all 1.3s;
+    box-shadow: 0px 1px 5px #c371e9d9;
+    margin:20px auto;
+    cursor: pointer; /*改变鼠标样式*/
+}
+.name{
+    font-family: "仿宋";
+    font-weight: 800;
+    font-size: 1.4em;
+    font-style: initial;
+    
+    margin-top:4px;
+    margin-left:98px;
+}
+.header:hover{
+    transform: rotate(360deg);
+}
+@media(max-width : 960px){
+    body{
+        width:800px;
+    }
+    .firstpage{
+        display: none;
+    }
+    .all{
+        width:960px;
+    }
+  }
+  .bottomone{
+    width:100%;
+    zoom:1;
+    overflow: auto;
+    text-align: center;
+    margin:25px auto;
+    margin-top:10px;
+    float: left;
+}
+.endword{
+    color:#4e4e4e;
+}
+.fromit{
+    color:#313131;
+    font-style: inherit;
+    font-weight: 400;
+}
+.fromit a{
+    text-decoration: none;
+    color:#000000;
+    font-family: "宋体";
+    transition: all 0.2s;
+}
+.fromit a:hover{
+    color:#f3f1f1;
+}
+.article{
+    width:1000px;
+    height:900px;
+    background-color: #ffffff;
+	margin:0px auto;
+}
+.title{
+	width:300px;
+	height:30px;
+	color:#000000;
+	float: left;
+	margin-top:5px;
+	margin-left: 30px;
+}
+.box{
+	float: left;
+	width: 1000px;
+	zoom:1;
+	overflow: auto;
+	margin:20px 0px;
+}
+.box title_1{
+	display: block;
+	margin:15px 28px;
+	font-size: 1.3em;
+
+	font-weight: 900;
+}
+.box p{
+	margin:0px 28px;
+	font-family: "微软雅黑";
+}
+.container{
+	float: left;
+	width:100%;
+}
+.explain{
+	width:101%;
+	height:330px;
+	background: url("../image/文章导航栏8.png") no-repeat center center;
+	background-size: 101% 330px;
+	margin-top:-8px;
+	float: left;
+	margin-left: -8.5px;
+}
+@media(max-width:1100px){
+	.explain{
+		display: none;
+	}
+}
+.pagetitle{
+	color:#ffffff;
+	padding: 0px 8px;
+	width: 300px;
+	height:40px;
+	font-family: "仿宋";
+	text-align: center;
+	margin:0px auto;
+	margin-top:90px;
+}
+.explain img{
+	float: left;
+	margin:0px 5px;
+	
+}
+.message{
+	width:378px;
+	height:16px;
+	color:#ffffff;
+	font-weight: 700;
+	padding:0px 5px;
+	margin:0px auto;
+}
+.message span{
+	float: left;
+	line-height: 16px;
+	margin-left: 5px;
+}
+.tag{
+	
+	float: left;
+	height:25px;
+	color:#ffffff;
+	text-decoration: none;
+	line-height: 25px;
+	border-radius: 5px;
+	margin: 0px 5px;
+	font-size: 0.7em;
+	letter-spacing: 2px;
+	transition: all 0.3s;
+	opacity: 0.9;
+}
+.tag:hover{
+	opacity: 1;
+}
+.test{
+	width:150px;
+	height:25px;
+	clear: both;
+	margin:0px auto;
+	margin-top:15px;
+}
+#tag_1{
+	text-align: center;
+	width: 60px;
+	background-color: tomato;
+}
+#tag_2{
+	text-align: center;
+	width: 60px;
+	background-color: yellowgreen;
+}
+.box p{
+	letter-spacing: 5px;
+}
